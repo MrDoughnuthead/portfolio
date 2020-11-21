@@ -39,17 +39,18 @@ p {
       }
       
       
-      li a:hover:not(.active) {
+      li a:hover:not(.current) {
         background-color: rgb(218, 218, 218);
       }
       
-      .active {
+      .current {
         background-color: #a5a5a5;
       }
 /* Containers */
 #container{
     margin: 2vh auto 0vh auto;
     width: 70%;
+    background-color: rgb(209, 209, 209);
 }
 #infoBox {
     padding-left: 5vh;
