@@ -20,7 +20,7 @@ button{
     font-size: 2vh;
     padding: 1vh 1vh;
     background-color: rgb(204, 204, 204);
-    border-style: groove;
+    border-style: none;
 }
 /* Navigation */
 #navbar{
