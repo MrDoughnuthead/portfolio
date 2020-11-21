@@ -13,7 +13,7 @@ p {
 /* Navigation */
 #navbar{
     overflow: auto;
-    background-color: rgb(189, 189, 189);
+    background-color: rgb(226, 226, 226);
     overflow:hidden;
     height: 5vh;
 }
@@ -22,7 +22,7 @@ p {
         list-style-type: none;
         margin: 0;
         overflow: hidden;
-        background-color: rgb(156, 156, 156);
+        background-color: rgb(194, 194, 194);
         height: 5vh;
         font-size: 2vh;
       }
@@ -40,11 +40,11 @@ p {
       
       
       li a:hover:not(.active) {
-        background-color: rgb(185, 185, 185);
+        background-color: rgb(218, 218, 218);
       }
       
       .active {
-        background-color: #7e7e7e;
+        background-color: #a5a5a5;
       }
 /* Containers */
 #container{
@@ -65,4 +65,9 @@ p {
 img {
     height: 100%;
     width: 100%;
+}
+/*Footer*/
+#footer {
+    background-color: #555;
+    height: 20vh;
 }
