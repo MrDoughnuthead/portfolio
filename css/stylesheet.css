@@ -1,9 +1,32 @@
 body {
-    margin: 30px auto 0 auto;
-    position: relative;
+    margin: 5vh auto 0vh auto;
     width: 70%;
+}
+
+#infoBox {
+    padding-left: 10vh;
+}
+
+#profilePicture {
+    width: 30vh;
+    float: left;
+}
+
+#information {
+    font-size: 5vh;
+    text-align: center;
 }
 
 h1 {
     text-align: center;
+    font-size: 5vh;
+}
+
+p {
+    font-size: 2vh;
+}
+
+img {
+    height: 100%;
+    width: 100%;
 }
