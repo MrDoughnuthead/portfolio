@@ -1,7 +1,8 @@
 body {
     margin: 0px;
     font-family: 'Segoe UI';
-    background-color: #ffffff;
+    background-color: #0f0f0f;
+    color: #fff;
 }
 /* Text Elements */
 h1 {
@@ -14,7 +15,7 @@ p {
 /* Navigation */
 #navbar{
     overflow: auto;
-    background-color: rgb(226, 226, 226);
+    background-color: rgb(3, 3, 3);
     overflow:hidden;
     height: 5vh;
 }
@@ -23,7 +24,7 @@ p {
         list-style-type: none;
         margin: 0;
         overflow: hidden;
-        background-color: rgb(194, 194, 194);
+        background-color: rgb(32, 32, 32);
         height: 5vh;
         font-size: 2vh;
       }
@@ -36,22 +37,22 @@ p {
     
       li a{
         padding: 14px 16px;
-        color: #111;
+        color: rgb(228, 228, 228);
       }
       
       
       li a:hover:not(.current) {
-        background-color: rgb(218, 218, 218);
+        background-color: rgb(27, 27, 27);
       }
       
       .current {
-        background-color: #a5a5a5;
+        background-color: #363636;
       }
 /* Containers */
 #container{
     margin: 2vh auto 0vh auto;
     width: 70%;
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(77, 75, 75);
 }
 #infoBox {
     padding-left: 5vh;
@@ -73,7 +74,7 @@ img {
     height:15vh;
 }
 #footer {
-    background-color: rgb(146, 146, 146);
+    background-color: rgb(54, 54, 54);
     height: 20vh;
     padding: 2vh;
     text-align: center;

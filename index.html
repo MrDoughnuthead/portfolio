@@ -4,12 +4,19 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="stylesheet" href="css/stylesheet.css">
+      <link id="pagestyle" rel="stylesheet" title="bright" href="css/stylesheet.css">
+      <script>
+         function swapStyleSheet(sheet){
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+         }
+         </script>
    </head>
    <body>
       <!--Navigation-->
       <div id="navbar">
          <ul>
+            <button style="float:left;" onclick="swapStyleSheet('css/darkstyle.css')">Dark Mode</button>
+            <button style="float:left;"onclick="swapStyleSheet('css/stylesheet.css')">Light Mode</button>
             <li><a class="current">Home</a></li>
             <li style="float:right;"><a href="contact.html">Contact</li></a>
             <li style="float:right;"><a href="portfolio.html">Portfolio</li></a>
@@ -48,7 +55,7 @@
          <div id="footerContent">
             <p>Leon Wilson Portfolio Wesbite for Digital Technology</p>
             <p>Instagram: <a href="https://www.instagram.com/lw_3d/">@lw_3d</p></a>
-            <a href="https://www.instagram.com/lw_3d/"><img src="images/insta.png" style="height:5vh;width:5vh;"></a>
+            <a href="https://www.instagram.com/lw_3d/"><img src="images/insta.png" style="height:5vh;width:5vh;"></a><br>
          </div>
       </div>
    </body>
