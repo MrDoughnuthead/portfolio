@@ -11,6 +11,13 @@ h1 {
 p {
     font-size: 2vh;
 }
+button{
+    height: 5vh;
+    font-size: 2vh;
+    padding: 1vh 1vh;
+    background-color: #fff;
+    border-style: groove;
+}
 /* Navigation */
 #navbar{
     overflow: auto;
@@ -24,18 +31,18 @@ p {
         margin: 0;
         overflow: hidden;
         background-color: rgb(194, 194, 194);
-        height: 5vh;
+        height: 6vh;
         font-size: 2vh;
       }
       
       li {
         float: left;
         padding: 1vh;
-        height:5vh;
+        height:6vh;
       }
     
       li a{
-        padding: 14px 16px;
+        padding: 1vh 1vh;
         color: #111;
       }
       
