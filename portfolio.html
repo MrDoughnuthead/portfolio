@@ -4,28 +4,73 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Document</title>
-      <link rel="stylesheet" href="css/stylesheet.css">
+      <link id="pagestyle" rel="stylesheet" title="bright" href="css/darkstyle.css">
+      <script>
+         function swapStyle(sheet){
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+            document.body.style.fontFamily = "Segoe UI";
+         }
+         function epic(){
+            document.body.style.fontFamily = "Comic Sans MS";
+         }
+         </script>
+         <style>img {
+            max-width:380px;
+            height:380px;
+            box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+         }
+         </style>
    </head>
    <body>
       <!--Navigation-->
       <div id="navbar">
          <ul>
-            <li><a href="index.html">Home</li></a>
+            <button style="float:left;" onclick="swapStyle('css/darkstyle.css')">Dark Mode</button>
+            <button style="float:left;"onclick="swapStyle('css/stylesheet.css')">Light Mode</button>
+            <button style="float:left;"onclick="epic()">Beautify</button>
+            <li><a class="current">Home</a></li>
             <li style="float:right;"><a href="contact.html">Contact</li></a>
-            <li style="float:right;"><a class="current" href="portfolio.html">Portfolio</li></a>
+            <li style="float:right;"><a href="portfolio.html">Portfolio</li></a>
             <li style="float:right;"><a href="about.html">About</li></a>
          </ul>
       </div>
       <!--Content-->
       <div id="container">
+               <!-- Page Content-->
+               <h1><u>Portfolio</u></h1>
+               <main class="gallery" style="padding: 1vh 7vh;">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+                  <img src="images/gallery/bmw.png">
+               </main>
+               <div id="gap">
+               </div>
+            </div>
+            <div id="gap">
+            </div>
+         </div>
       </div>
-      <div id="gap">
-      </div>
+      <br>
       <div id="footer">
          <div id="footerContent">
             <p>Leon Wilson Portfolio Wesbite for Digital Technology</p>
             <p>Instagram: <a href="https://www.instagram.com/lw_3d/">@lw_3d</p></a>
-            <a href="https://www.instagram.com/lw_3d/"><img src="images/insta.png" style="height:5vh;width:5vh;"></a>
+            <a href="https://www.instagram.com/lw_3d/"><img src="images/insta.png" style="height:5vh;width:5vh;"></a><br>
+            <p id="debug"></p>
+            <script src="js/displayBrowser.js"></script>
          </div>
       </div>
    </body>
