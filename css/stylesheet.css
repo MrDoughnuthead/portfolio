@@ -67,7 +67,13 @@ img {
     width: 100%;
 }
 /*Footer*/
-#footer {
-    background-color: #555;
-    height: 20vh;
+#gap {
+    height:15vh;
 }
+#footer {
+    background-color: rgb(146, 146, 146);
+    height: 20vh;
+    padding: 2vh;
+    text-align: center;
+}
+
