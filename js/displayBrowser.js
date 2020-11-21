@@ -1,0 +1,1 @@
+document.getElementById("debug").innerHTML = navigator.appVersion; //Display browser information, mainly example to show external js use.

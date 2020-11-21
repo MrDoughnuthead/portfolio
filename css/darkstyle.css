@@ -12,6 +12,10 @@ h1 {
 p {
     font-size: 2vh;
 }
+a {
+    color: rgb(148, 89, 182);
+
+}
 button{
     height: 5vh;
     font-size: 2vh;

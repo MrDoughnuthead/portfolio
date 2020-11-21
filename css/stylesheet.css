@@ -11,11 +11,15 @@ h1 {
 p {
     font-size: 2vh;
 }
+a {
+    color: rgb(219, 235, 234);
+
+}
 button{
     height: 5vh;
     font-size: 2vh;
     padding: 1vh 1vh;
-    background-color: #fff;
+    background-color: rgb(204, 204, 204);
     border-style: groove;
 }
 /* Navigation */
