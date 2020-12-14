@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-</head>
-<body>
-    
-    <div style="height:500px;width:500px;">
-        <model-viewer src="models/axbass.glb" exposure="1.5" camera-controls>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link id="pagestyle" rel="stylesheet" title="bright" href="css/darkstyle.css">
+      <script>
+         function swapStyle(sheet){
+            document.getElementById('pagestyle').setAttribute('href', sheet);
+            document.body.style.fontFamily = "Segoe UI";
+         }
+         function epic(){
+            document.body.style.fontFamily = "Comic Sans MS";
+         }
+         </script>
+         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+         <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+   </head>
+   <body>
+      <!--Navigation-->
+      <div id="navbar">
+         <ul>
+            <button style="float:left;" onclick="swapStyle('css/darkstyle.css')">Dark Mode</button>
+            <button style="float:left;"onclick="swapStyle('css/stylesheet.css')">Light Mode</button>
+            <button style="float:left;"onclick="epic()">Beautify</button>
+            <li><a class="current">Home</a></li>
+            <li style="float:right;"><a href="contact.html">Contact</li></a>
+            <li style="float:right;"><a href="portfolio.html">Portfolio</li></a>
+            <li style="float:right;"><a href="about.html">About</li></a>
+         </ul>
+      </div>
+      <!--Content-->
+      <div id="container">
+         <h1 style="padding:2vh;">Solgaleo Model</h1>
+         <model-viewer style="height:80vh;width:80vh;margin:auto;padding:5;" skybox-image="images/aircraft.hdr" environment-image="images/aircraft.hdr" src="models/axbass.glb" exposure="1.5" camera-orbit="3.074deg 83.45deg 9.413m" camera-controls>
 
-        </model-viewer>
-        
-</div>
-</body>
+         </model-viewer>  
+         <div id="gap">
+         </div>    
+            </div>
+            <div id="gap">
+            </div>
+         </div>
+      </div>
+      <br>
+      <div id="footer">
+         <div id="footerContent">
+            <p>Leon Wilson Portfolio Wesbite for Digital Technology</p>
+            <p>Instagram: <a href="https://www.instagram.com/lw_3d/">@lw_3d</p></a>
+            <a href="https://www.instagram.com/lw_3d/"><img src="images/insta.png" style="height:5vh;width:5vh;"></a><br>
+            <p id="debug"></p>
+            <script src="js/displayBrowser.js"></script>
+         </div>
+      </div>
+   </body>
 </html>
